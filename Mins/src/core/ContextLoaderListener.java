@@ -39,7 +39,7 @@ public class ContextLoaderListener implements ServletContextListener {
       ds.setPassword(sc.getInitParameter("password"));
 
       UserDAO userDAO = new UserDAO();
-      userDAO.setDataSource(ds);
+/*      userDAO.setDataSource(ds);*/
 
       sc.setAttribute("userDAO", userDAO);
 
